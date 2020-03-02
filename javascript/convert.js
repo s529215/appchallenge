@@ -1,7 +1,7 @@
 function convert(){
-    const miles = parseFloat(document.getElementById("miles").value);
-    const feet = (miles*5280);
+    const temp = parseFloat(document.getElementById("temp").value);
+    const kelvin = (temp + 273.15);
 
-    document.getElementById("feet").innerHTML = feet+'ft';
+    document.getElementById("kelvin").innerHTML = kelvin;
     return false;
 }
